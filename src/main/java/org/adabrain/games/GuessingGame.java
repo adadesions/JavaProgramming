@@ -31,6 +31,14 @@ public class GuessingGame extends Game implements Guessable {
                 isGuessRightAnswer = true;
                 break;
             }
+            // Feedback to player
+            else if (this.currentGuesses > this.numberToGuess) {
+                System.out.println("AI: Lower!");
+            }
+            else
+            {
+                System.out.println("AI: Higher!");
+            }
 
             System.out.println("Next Guess...");
         }
